@@ -1,0 +1,13 @@
+html, body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* .navbar-brand {
+  color: #60b0f4;
+  font-size: 25px;
+} */
+
+.signup {
+  height: 35px;
+  width: 160px;
+}
