@@ -11,3 +11,11 @@ html, body {
   height: 35px;
   width: 160px;
 }
+
+table {
+  width: 100%;
+}
+
+td {
+  text-align: center;
+}
