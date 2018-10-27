@@ -137,9 +137,9 @@ def signup():
     if form.validate_on_submit():
         hashed_password = generate_password_hash(form.password.data, method='sha256')
         type = form.type.data
-        user = User.query.filter_by(email=form.email.data,type=type).first()
+        user = User.query.filter_by(email=form.email.data).first()
         if user:
-            message = "** email already exits"
+            message = "** email already exists"
             return render_template('signup.html', message=message, form=form)
         else:
             new_user = User(username=form.username.data, email=form.email.data, password=hashed_password, type=form.type.data, confirm_email=False, institute=form.institute.data, semester=form.semester.data)
