@@ -937,7 +937,7 @@ def perform1445():
         current_date = datetime.now()
         cur_day = dayNameFromWeekday(int(each.day))
         if str(current_date.strftime('%A')) != cur_day:
-            continue
+            continue8
         user_id = each.user_id
         getUser = User.query.filter_by(id=user_id).first()
         email = getUser.email
